@@ -14,3 +14,41 @@ Draft: This component will add a publishing workflow to Hugo content (think of a
 It will NOT add a secure authentication method and access limitation per content type. That is not possible with the given tools. But we can regulate user groups (author, editor, etc.) via email/name layouts of git commits and a strict githook setup.
 
 It's an experimental system.
+
+## Authorship
+
+There are many ways to demark authorship in GoHugo.
+
+
+
+### Denote authorship
+
+Publisher accepts several methods to denote authorship. The component will look for author information in the following order:
+
+- [Multiple authors of a content piece via frontmatter](#multiple-authors-of-a-content-piece-via-frontmatter)
+- [Single author of a content piece via frontmatter](#single-author-of-a-content-piece-via-frontmatter)
+- [Single author of the whole site via configuration](#single-author-of-the-whole-site-via-configuration)
+- [Multiple authors of the whole site via configuration](#multiple-authors-of-the-whole-site-via-configuration)
+- [Single or multiple authors via data-configuration](#single-or-multiple-authors-via-data-configuration)
+
+#### Multiple authors of a content piece via frontmatter
+
+```
+[[authors]]
+name = "Patrick Kollitsch"
+[[authors]]
+name = "Jane Doe"
+```
+
+#### Single author of a content piece via frontmatter
+
+```
+[author]
+name = "Patrick Kollitsch"
+```
+
+#### Single author of the whole site via configuration
+
+#### Multiple authors of the whole site via configuration
+
+#### Single or multiple authors via data-configuration
