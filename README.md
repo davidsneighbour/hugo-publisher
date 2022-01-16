@@ -33,7 +33,7 @@ Publisher accepts several methods to denote authorship. The component will look 
 
 #### Multiple authors of a content piece via frontmatter
 
-```
+```toml
 [[authors]]
 name = "Patrick Kollitsch"
 [[authors]]
@@ -42,13 +42,32 @@ name = "Jane Doe"
 
 #### Single author of a content piece via frontmatter
 
-```
+```toml
 [author]
 name = "Patrick Kollitsch"
 ```
 
+```toml
+[author]
+[author.john_doe]
+name = "John Doe"
+location = "San Francisco"
+[author.jane_smith]
+name = "Jane Smith"
+location = "New York"
+```
+
 #### Single author of the whole site via configuration
+
+```toml
+```
 
 #### Multiple authors of the whole site via configuration
 
+```toml
+```
+
 #### Single or multiple authors via data-configuration
+
+```toml
+```
