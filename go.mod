@@ -1,3 +1,3 @@
-module github.com/dnb-org/dnb-hugo-publisher
+module github.com/davidsneighbour/hugo-publisher
 
 go 1.17
